@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    
+<!-- Latest compiled and minified CSS -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./css/style.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+
+    <div class="jumbotron-fluid background py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8 my-3">
+                    <dic class="col-12 col-md-4 my-3">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5LlQNty_C8s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 my-3">
+                        <h1>Hangman</h1>
+                        <button id="new-game-button">
+                                <i class="fas fa-gamepad"></i>
+                                Start A New Game
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center py-5" id="placeholder-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-6 my-3">
+                                <h2>Fill These In!
+                                    <br/>
+                                    <span id="placeholders">_____ _____ _____</span>
+                                </h2>
+                            </div>
+                            <div class="col-12 col-md-6 my-3">
+                            <h2>Incorret Letters Guessed
+                                    <br/>
+                                    <span id="guessed-letters"></span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center py-5">
+                        <h3>
+                            Guesses Left: <span id="guesses-left">0</span>
+                        </h3>
+                    </div>
+                    <div class="col-12 col-md-4 text-center py-5">
+                        <h3>
+                            Wins: <span id="wins">0</span>
+                        </h3>
+                    </div>
+                    <div class="col-12 col-md-4 text-center py-5">
+                        <h3>
+                            Losses: <span id="losses">0</span>
+                        </h3>
+                    </div>
+                </div>
+    
+    
+    
+    <script src="./javascript/game.js"></script>
+
+
+</body>
+</html> 
