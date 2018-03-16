@@ -34,6 +34,8 @@ function newGame() {
     document.getElementById('placeholders').innerText = pickedWordPlaceholderArr;
 }
 
+//
+
 
 
 
